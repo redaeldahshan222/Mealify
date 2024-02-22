@@ -1,0 +1,195 @@
+
+/* ranges 
+576px         =>sm 
+577px :768px  =>md 
+769px :992px  =>lg 
+993px :1200px =>xl */
+/* -------------------- */
+@media screen and (max-width:768px){
+.navbar{
+    display: flex;
+}
+.navbar .hidden i {
+    visibility: visible;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+.navbar .hidden:hover + ul {
+    visibility: visible;
+}
+.navbar .menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition:1s;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+}
+/* -------------------- */
+#home .details{
+    padding-block: 80px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#home .details .caption{
+    width: 100%;
+    text-align: center;
+}
+#home .details .caption h2{
+    font-size: 80px;
+}
+#home .details .caption .btn{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+#home .details .caption .btn1{
+    margin-block: 30px;
+}
+#home .details .caption .btn2 i{
+    top: 0;
+    left: -30px;
+}
+
+#home .details .img{
+    width: 100%;
+}
+/* -------------------- */
+#chefs .items{
+    flex-direction: column;
+}
+#chefs .item{
+    margin: 10px;
+    width: 100%;
+}
+/* -------------------- */
+#gallery .items{
+    columns: 1;
+}
+/* -------------------- */
+#contact .info{
+    flex-direction: column;
+}
+#contact .detail{
+    width: 100%;
+}
+#contact .form .name,#contact .form .email{
+    width: 100%;
+}
+/* -------------------- */
+#footer .container{
+    display: block;
+}
+#footer .head{
+width: 100%;
+}
+#footer .middle{
+    width: 100%;
+}
+#footer .middle .mail{
+    width: 100%;
+    /* display: block; */
+}
+#footer .middle .link a{
+    width: 47%;
+}
+#footer .tail {
+    width: 100%;
+}
+}
+/* -------------------- */
+@media screen and (min-width:769px) and (max-width:1200px){
+    .navbar{
+        display: flex;
+    }
+    .navbar .hidden i {
+        visibility: visible;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+    }
+    .navbar .hidden:hover + ul {
+        visibility: visible;
+    }
+    .navbar .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition:1s;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+        visibility: hidden;
+    }
+/* -------------------- */
+    #home .details{
+        padding-block: 80px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #home .details .caption{
+        width: 100%;
+        text-align: center;
+    }
+    
+#home .details .caption h2{
+    font-size: 80px;
+}
+    #home .details .img{
+        width: 100%;
+    }
+    /* -------------------- */
+    #chefs .items{
+        display: block;
+        columns: 2;
+        break-inside: avoid;
+    }
+    #chefs .item{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    /* -------------------- */
+    #gallery .items{
+        columns: 2;
+    }
+    /* -------------------- */
+    #contact .detail {
+        width: 47%;
+    }
+    #contact .form .name,#contact .form .email{
+        width: 100%;
+    }
+    /* -------------------- */
+    #footer .container{
+        columns: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    #footer .head{
+        order: 0;
+        width: 50%;
+    }
+    #footer .middle{
+        order: 3;
+        width: 100%;
+    }
+    #footer .middle .link a{
+        width: 47%;
+    }
+    #footer .tail {
+        order: 1;
+        width: 50%;
+    }
+}
+/* -------------------- */
